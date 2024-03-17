@@ -9,14 +9,3 @@
 
     - url: https://www.example.com
       image: https://picsum.photos/720/1280
-
-- name: Instagram
-  items:
-    - url: https://www.example.com
-      image: https://picsum.photos/700/400 # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
-
-    - url: https://www.example.org
-      image: https://picsum.photos/500
-
-    - url: https://www.example.com
-      image: https://picsum.photos/250/300
