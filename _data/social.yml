@@ -1,6 +1,6 @@
 - name: email
   url: mailto:fernandoadt1@gmail.com
-  icon: ri:gmail-fill
+  icon: mdi:gmail
   color: '#FF5D5D'
 
 - name: linkedln
