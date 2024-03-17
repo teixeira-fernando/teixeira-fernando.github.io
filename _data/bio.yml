@@ -1,4 +1,4 @@
-- name: YouTube Shorts
+- name: Main Github Projects
   ratio: vertical # For vertical 9:16 aspect ratio. Ideal for video thumbnails, such as those used on Instagram Reels, YouTube Shorts and TikTok. To use the default 1:1 aspect ratio (square), remove this variable.
   items:
     - url: https://www.example.com

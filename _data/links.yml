@@ -1,6 +1,6 @@
-- category: Blogs
+- category: Github Projects
   items:
-    - title: Example
+    - title: Ecommerce Microservices
       url: https://www.example.com
       icon: ri:film-fill # Icons are optional.
       tag: New
