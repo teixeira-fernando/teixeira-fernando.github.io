@@ -1,7 +1,7 @@
 - name: email
   url: mailto:fernandoadt1@gmail.com
   icon: mdi:gmail
-  color: '#FF5D5D'
+  color: '#FF4343'
 
 - name: linkedln
   url: https://www.linkedin.com/in/fernandoadt/
