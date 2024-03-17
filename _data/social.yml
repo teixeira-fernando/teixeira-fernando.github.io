@@ -1,19 +1,19 @@
 - name: email
   url: mailto:fernandoadt1@gmail.com
-  icon: ri:email-fill
-  color: '#6364FF'
+  icon: ri:gmail-fill
+  color: '#FF5D5D'
 
 - name: linkedln
   url: https://www.linkedin.com/in/fernandoadt/
   icon: ri:linkedin-fill
-  color: '#25D366'
+  color: '#0077B5'
 
 - name: medium
   url: https://medium.com/@teixeirafernando
   icon: ri:medium-fill
-  color: '#25D366'
+  color: '#000000'
 
 - name: github
   url: https://github.com/teixeira-fernando
   icon: ri:github-fill
-  color: '#FF0000'
+  color: '#2B3137'
