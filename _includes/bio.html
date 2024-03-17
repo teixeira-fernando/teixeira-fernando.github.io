@@ -1,7 +1,7 @@
 <section>
     {% for name in site.data.bio %}
     <details>
-        <summary class="text-center text-error">{{ name.name }} Link-in-Bio</summary>
+        <summary class="text-center text-error">{{ name.name }}</summary>
         <div class="bio-gallery">
             {% for item in name.items %}
             {% if name.ratio %}

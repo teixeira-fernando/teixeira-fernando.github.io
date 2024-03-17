@@ -9,14 +9,10 @@
       url: https://www.example.org
       icon: simple-icons:googlenews
 
-- category: Products
+- category: Latest Articles
   items:
-    - title: Example 3
-      url: https://www.example.com
+    - title: Creating a test strategy for asynchronous microservices applications
+      url: https://medium.com/assertqualityassurance/creating-a-test-strategy-for-asynchronous-microservices-applications-1397f7755e85
 
-- category: Works
-  items:
-    - title: Example 4
-      url: https://www.example.org
-      icon: clarity:language-solid
-      tag: Sale
+    - title: Improving your test strategy analyzing the application architecture risks
+      url: https://medium.com/assertqualityassurance/improving-your-test-strategy-analyzing-the-application-architecture-risks-f83fad2d13b4
