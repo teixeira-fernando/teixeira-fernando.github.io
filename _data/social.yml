@@ -10,7 +10,7 @@
 
 - name: medium
   url: https://medium.com/@teixeirafernando
-  icon: akar-icons:medium-fill
+  icon: bxl:medium
   color: '#FFFFFF'
 
 - name: github
