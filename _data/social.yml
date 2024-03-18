@@ -10,7 +10,7 @@
 
 - name: medium
   url: https://medium.com/@teixeirafernando
-  icon: bxl:medium
+  icon: basil:medium-solid
   color: '#FFFFFF'
 
 - name: github
