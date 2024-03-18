@@ -11,7 +11,7 @@
 - name: medium
   url: https://medium.com/@teixeirafernando
   icon: basil:medium-solid
-  color: '#FFFFFF'
+  color: '#000000'
 
 - name: github
   url: https://github.com/teixeira-fernando
