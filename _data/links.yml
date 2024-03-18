@@ -1,9 +1,8 @@
 - category: Github Projects
   items:
     - title: Ecommerce Microservices
-      url: https://www.example.com
-      icon: ri:film-fill # Icons are optional.
-      tag: New
+      url: https://github.com/teixeira-fernando/EcommerceApp
+      icon: ri:java-fill # Icons are optional.
 
     - title: Example 2
       url: https://www.example.org
