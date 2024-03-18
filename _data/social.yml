@@ -11,7 +11,7 @@
 - name: medium
   url: https://medium.com/@teixeirafernando
   icon: akar-icons:medium-fill
-  color: '#000000'
+  color: '#FFFFFF'
 
 - name: github
   url: https://github.com/teixeira-fernando
