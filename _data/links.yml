@@ -3,10 +3,22 @@
     - title: Ecommerce Microservices
       url: https://github.com/teixeira-fernando/EcommerceApp
       icon: ri:java-fill # Icons are optional.
+      tag: Java
 
-    - title: Example 2
-      url: https://www.example.org
-      icon: simple-icons:googlenews
+    - title: Baseline Performance Tests with Locust, Docker-compose and Github-Actions
+      url: https://github.com/teixeira-fernando/BaselinePerformanceTest-Locust
+      icon: mdi:performance
+      tag: Python
+
+    - title: Library Microservices
+      url: https://github.com/teixeira-fernando/library-microservices
+      icon: fa6-brands:node
+      tag: Javascript
+
+    - title: Rest Assured Architecture Setup
+      url: https://github.com/teixeira-fernando/restassured-framework-setup
+      icon: ri:java-fill # Icons are optional.
+      tag: Java
 
 - category: Latest Articles
   items:
