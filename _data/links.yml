@@ -5,9 +5,9 @@
       icon: ri:java-fill # Icons are optional.
       tag: Java
 
-    - title: Baseline Performance Tests with Locust, Docker-compose and Github-Actions
+    - title: Performance Tests with Locust and Docker-compose
       url: https://github.com/teixeira-fernando/BaselinePerformanceTest-Locust
-      icon: mdi:performance
+      icon: logos:python
       tag: Python
 
     - title: Library Microservices
