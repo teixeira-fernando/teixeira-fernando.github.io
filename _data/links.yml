@@ -1,4 +1,4 @@
-- category: Github Projects
+- category: Main Github Projects
   items:
     - title: Ecommerce Microservices
       url: https://github.com/teixeira-fernando/EcommerceApp
@@ -12,7 +12,7 @@
 
     - title: Library Microservices
       url: https://github.com/teixeira-fernando/library-microservices
-      icon: fa6-brands:node
+      icon: logos:javascript
       tag: Javascript
 
     - title: Rest Assured Architecture Setup
