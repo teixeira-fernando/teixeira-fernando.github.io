@@ -4,7 +4,7 @@ theme: linkhub-jekyll-theme
 # Site Configuration
 name: Fernando Teixeira  # Name of your website
 tagline: Links  # Set your preferred page title
-description: Software Engineer in Test  # Also used as a meta description
+description: Software Engineer in Test | Lead QA Engineer at Verivox # Also used as a meta description
 favicon: assets/images/noto--technologist-medium-light-skin-tone.svg # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
 logo: assets/images/profile_min_Fernando Teixeira.png # Path / URL to the logo (e.g., 'assets/images/logo.png')
 url: https://teixeira-fernando.github.io # URL of your website
