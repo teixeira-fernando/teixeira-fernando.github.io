@@ -22,7 +22,7 @@
 
 - category: Latest Articles
   items:
-    - title: Software Quality and Developer Experience: Why testers should care about it
+    - title: Software Quality and Developer Experience - Why testers should care about it
       url: https://www.ministryoftesting.com/articles/software-quality-and-developer-experience-why-testers-should-care-about-it
   
     - title: Creating a test strategy for asynchronous microservices applications
