@@ -20,6 +20,11 @@
       icon: ri:java-fill # Icons are optional.
       tag: Java
 
+    - title: Super Test Architecture Setup
+      url: https://github.com/teixeira-fernando/supertest-architecture
+      icon: logos:javascript
+      tag: Javascript
+
 - category: Latest Articles
   items:
     - title: Creating a test strategy for asynchronous microservices applications
