@@ -15,6 +15,11 @@
       icon: logos:javascript
       tag: Javascript
 
+    - title: Review Analysis Cloud Microservices - Test Containers and Localstack
+      url: https://github.com/teixeira-fernando/Review-Analysis-Cloud-Microservices
+      icon: logos:java
+      tag: Localstack, Test Containers
+
     - title: Rest Assured Architecture Setup
       url: https://github.com/teixeira-fernando/restassured-framework-setup
       icon: ri:java-fill # Icons are optional.
@@ -24,6 +29,13 @@
       url: https://github.com/teixeira-fernando/supertest-architecture
       icon: logos:javascript
       tag: Javascript
+
+- category: Talks recordings
+  items:
+    - title: Mastering Microservices Testing with an Effective Testing Strategy
+      url: https://www.youtube.com/watch?v=ua8v0n2jltU&t=4s&ab_channel=StowarzyszenieJako%C5%9BciSystem%C3%B3wInformatycznych%28PolishTestingBoard%29
+      icon: ri:youtube-fill
+      tag: Talk
 
 - category: Latest Articles
   items:
