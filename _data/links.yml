@@ -15,10 +15,10 @@
       icon: logos:javascript
       tag: Javascript
 
-    - title: Review Analysis Cloud Microservices - Test Containers and Localstack
+    - title: Test Containers and Localstack in practice
       url: https://github.com/teixeira-fernando/Review-Analysis-Cloud-Microservices
       icon: logos:java
-      tag: Localstack, Test Containers
+      tag: Java
 
     - title: Rest Assured Architecture Setup
       url: https://github.com/teixeira-fernando/restassured-framework-setup
