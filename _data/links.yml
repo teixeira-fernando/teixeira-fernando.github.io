@@ -39,6 +39,9 @@
 
 - category: Latest Articles
   items:
+    - title: Testing cloud applications without breaking the bank - Testcontainers and LocalStack
+      url: https://www.ministryoftesting.com/articles/testing-cloud-applications-without-breaking-the-bank-testcontainers-and-localstack
+
     - title: Software Quality and Developer Experience - Why testers should care about it
       url: https://www.ministryoftesting.com/articles/software-quality-and-developer-experience-why-testers-should-care-about-it
   
