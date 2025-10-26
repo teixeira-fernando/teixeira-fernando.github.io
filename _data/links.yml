@@ -2,7 +2,7 @@
   items:
     - title: Ecommerce Microservices
       url: https://github.com/teixeira-fernando/EcommerceApp
-      icon: ri:java-fill # Icons are optional.
+      icon: logos:java
       tag: Java
 
     - title: Performance Tests with Locust
@@ -17,12 +17,11 @@
 
     - title: Test Containers and Localstack in practice
       url: https://github.com/teixeira-fernando/Review-Analysis-Cloud-Microservices
-      icon: logos:java
-      tag: Java
+      tag: Java and Javascript
 
     - title: Rest Assured Architecture Setup
       url: https://github.com/teixeira-fernando/restassured-framework-setup
-      icon: ri:java-fill # Icons are optional.
+      icon: logos:java
       tag: Java
 
     - title: Super Test Architecture Setup
@@ -34,7 +33,7 @@
   items:
     - title: Mastering Microservices Testing with an Effective Testing Strategy
       url: https://www.youtube.com/watch?v=ua8v0n2jltU&t=4s&ab_channel=StowarzyszenieJako%C5%9BciSystem%C3%B3wInformatycznych%28PolishTestingBoard%29
-      icon: ri:youtube-fill
+      icon: logos:youtube-icon
       tag: Talk
 
 - category: Latest Articles
