@@ -36,7 +36,7 @@
       icon: logos:youtube-icon
       tag: Talk
 
-    - title: Testing Cloud Applications without Breaking the Bank - Testcontainers and LocalStack
+    - title: Testing Cloud Applications without Breaking the Bank 
       url: https://www.youtube.com/watch?v=SRZeK9D6fDg
       icon: logos:youtube-icon
       tag: Talk
