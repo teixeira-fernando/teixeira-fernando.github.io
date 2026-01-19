@@ -1,0 +1,61 @@
+# Site settings
+title: Personal Website
+description: A minimalist personal website for sharing articles, talks, and projects
+url: "https://yourusername.github.io"
+baseurl: ""
+author:
+  name: Your Name
+  email: your.email@example.com
+  twitter: yourtwitterhandle
+  github: yourgithubusername
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/
+  talks:
+    output: true
+    permalink: /talks/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "default"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
