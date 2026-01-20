@@ -42,7 +42,8 @@ A minimalist, fast, and SEO-friendly Jekyll starter for creating a personal webs
 
 - Ruby 2.7+ ([installation guide](https://www.ruby-lang.org/en/documentation/installation/))
 - RubyGems
-- GCC and Make
+- GCC and Make (for compiling native extensions)
+- Bundler: `gem install bundler`
 
 ### Installation
 
@@ -54,8 +55,11 @@ A minimalist, fast, and SEO-friendly Jekyll starter for creating a personal webs
 
 2. Install dependencies:
    ```bash
+   bundle config set --local path 'vendor/bundle'
    bundle install
    ```
+   
+   **Note**: This project uses `jekyll-sass-converter` 2.2 (Ruby Sass) instead of the newer Dart Sass implementation to avoid native compilation issues with `sass-embedded`. This ensures maximum compatibility across different platforms.
 
 3. Update `_config.yml` with your information:
    - Site title and description
