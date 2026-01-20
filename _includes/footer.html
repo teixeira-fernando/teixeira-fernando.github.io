@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
+    <div class="social-links">
+      {% if site.author.github %}
+      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+      {% endif %}
+      {% if site.author.twitter %}
+      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+      {% endif %}
+      {% if site.author.email %}
+      <a href="mailto:{{ site.author.email }}" aria-label="Email">Email</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>
