@@ -33,7 +33,6 @@ A minimalist, fast, and SEO-friendly Jekyll starter for creating a personal webs
 
 🎨 **Clean, Minimalist Design**
 - Top navigation: About, Talks, Articles, Projects
-- Inspired by https://debbie.codes
 - Professional and distraction-free
 
 ## Quick Start
@@ -220,10 +219,6 @@ Found a bug or have a suggestion? Please open an issue or submit a pull request!
 ## License
 
 MIT License - feel free to use this for your own personal website!
-
-## Credits
-
-Inspired by the minimalist design of [debbie.codes](https://debbie.codes)
 
 ---
 
