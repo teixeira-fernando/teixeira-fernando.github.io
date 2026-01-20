@@ -221,7 +221,7 @@ code {
   border-radius: 4px;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 0.875em;
-  color: #e01e5a;
+  color: #7c3aed;
   border: 1px solid #e1e4e8;
 }
 
@@ -424,7 +424,7 @@ button:focus {
 }
 
 /* Additional utility classes */
-.section-preview p a {
+.view-all-link {
   display: inline-block;
   margin-top: 0.5rem;
   font-weight: 600;
@@ -436,9 +436,10 @@ button:focus {
   transition: all 0.2s ease;
 }
 
-.section-preview p a:hover {
+.view-all-link:hover {
   background-color: #5b21b6;
   color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(91, 33, 182, 0.2);
+  border-bottom-color: transparent;
 }

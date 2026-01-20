@@ -21,7 +21,7 @@ title: Home
     </li>
     {% endfor %}
   </ul>
-  <p><a href="{{ '/articles' | relative_url }}">View all articles →</a></p>
+  <p><a href="{{ '/articles' | relative_url }}" class="view-all-link">View all articles →</a></p>
   {% else %}
   <p>No articles yet. Check back soon!</p>
   {% endif %}
@@ -39,7 +39,7 @@ title: Home
     </li>
     {% endfor %}
   </ul>
-  <p><a href="{{ '/talks' | relative_url }}">View all talks →</a></p>
+  <p><a href="{{ '/talks' | relative_url }}" class="view-all-link">View all talks →</a></p>
   {% else %}
   <p>No talks yet. Check back soon!</p>
   {% endif %}
@@ -57,7 +57,7 @@ title: Home
     </li>
     {% endfor %}
   </ul>
-  <p><a href="{{ '/projects' | relative_url }}">View all projects →</a></p>
+  <p><a href="{{ '/projects' | relative_url }}" class="view-all-link">View all projects →</a></p>
   {% else %}
   <p>No projects yet. Check back soon!</p>
   {% endif %}
