@@ -1,13 +1,13 @@
 # Site settings
-title: Personal Website
+title: Fernando Teixeira
 description: A minimalist personal website for sharing articles, talks, and projects
-url: "https://yourusername.github.io"
+url: "https://teixeira-fernando.github.io"
 baseurl: ""
 author:
-  name: Your Name
-  email: your.email@example.com
-  twitter: yourtwitterhandle
-  github: yourgithubusername
+  name: Fernando Teixeira
+  email: fernandoadt1@gmail.com
+  linkedin: fernandoadt1
+  github: teixeira-fernando
 
 # Build settings
 markdown: kramdown
