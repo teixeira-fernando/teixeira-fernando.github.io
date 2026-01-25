@@ -11,7 +11,7 @@ export const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({ article })
     <div className="max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
       <header className="mb-12">
         <button 
-          onClick={() => window.history.back()}
+          onClick={() => window.location.hash = 'articles'}
           className="text-sm font-semibold text-slate-400 hover:text-blue-600 mb-8 flex items-center gap-1 transition-colors"
         >
           ← Back to Articles
