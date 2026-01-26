@@ -2,6 +2,9 @@
 title: Open Source Contributions
 date: 2023-01-01
 description: Contributing to various open source projects
+repo_url: https://github.com
+tech: [JavaScript, TypeScript, Documentation]
+image: https://picsum.photos/seed/opensource/600/400
 ---
 
 # Open Source Contributions

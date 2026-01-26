@@ -3,6 +3,9 @@ title: Personal Website
 date: 2024-01-01
 description: A fast, accessible personal website built with Jekyll
 url_external: https://github.com/yourusername/personal-website
+repo_url: https://github.com/yourusername/personal-website
+tech: [Jekyll, HTML, CSS]
+image: https://picsum.photos/seed/website/600/400
 ---
 
 # Personal Website

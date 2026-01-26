@@ -2,6 +2,7 @@
 title: Getting Started with Jekyll
 date: 2024-01-15
 description: A beginner's guide to creating static websites with Jekyll
+tags: [Jekyll, Web Development, Static Sites]
 ---
 
 # Getting Started with Jekyll
