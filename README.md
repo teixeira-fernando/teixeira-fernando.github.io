@@ -57,8 +57,6 @@ A minimalist, fast, and SEO-friendly Jekyll starter for creating a personal webs
    bundle config set --local path 'vendor/bundle'
    bundle install
    ```
-   
-   **Note**: This project uses `jekyll-sass-converter` 2.2 (Ruby Sass) instead of the newer Dart Sass implementation to avoid native compilation issues with `sass-embedded`. This ensures maximum compatibility across different platforms.
 
 3. Update `_config.yml` with your information:
    - Site title and description
