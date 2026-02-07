@@ -1,15 +1,47 @@
 <footer class="site-footer">
-  <div class="footer-content">
-    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
-    <div class="social-links">
-      {% if site.author.twitter %}
-      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
-      {% endif %}
-      {% if site.author.github %}
-      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-      {% endif %}
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-      <a href="/rss.xml" aria-label="RSS">RSS</a>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <!-- Social Media Column -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Connect</h3>
+        <ul class="footer-links">
+          {% if site.author.github %}
+          <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+          {% endif %}
+          {% if site.author.linkedin %}
+          <li><a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+          {% endif %}
+          {% if site.author.twitter %}
+          <li><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/articles">Articles</a></li>
+          <li><a href="/talks">Talks</a></li>
+          <li><a href="/projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Column -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Contact</h3>
+        <ul class="footer-links">
+          {% if site.author.email %}
+          <li><a href="mailto:{{ site.author.email }}" aria-label="Email">{{ site.author.email }}</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
     </div>
   </div>
 </footer>
