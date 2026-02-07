@@ -582,7 +582,6 @@ button:focus {
   display: block;
   text-decoration: none;
   border: none;
-  outline: none;
 }
 
 .project-banner-link:focus {
