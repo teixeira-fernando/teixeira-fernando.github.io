@@ -676,6 +676,19 @@ button:focus {
   box-shadow: 0 25px 55px -25px rgba(15, 23, 42, 0.55);
 }
 
+.article-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.article-card-link:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
+}
+
 .article-visual {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -695,6 +708,7 @@ button:focus {
   flex-direction: column;
   gap: 0.85rem;
   height: 100%;
+  flex: 1;
 }
 
 .article-date {
@@ -710,6 +724,7 @@ button:focus {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
+  color: #0f172a;
 }
 
 .article-title a {
