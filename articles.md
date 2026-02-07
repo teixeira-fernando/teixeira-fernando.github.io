@@ -37,3 +37,38 @@ description: Technical articles and blog posts
 {% else %}
 <p>No articles published yet. Check back soon!</p>
 {% endif %}
+
+{% assign external_articles = site.data.external_articles | sort: 'date' | reverse %}
+{% if external_articles and external_articles.size > 0 %}
+<section class="external-articles" style="margin-top: 4rem;">
+
+  <div class="articles-grid">
+    {% for external in external_articles %}
+    <article class="article-item">
+      {% if external.date %}
+      <time class="article-date">{{ external.date | date: "%b %d, %Y" }}</time>
+      {% endif %}
+      <div class="article-content-wrapper">
+        <h2 class="article-title">
+          <a href="{{ external.url }}" target="_blank" rel="noopener">{{ external.title }}</a>
+        </h2>
+        {% if external.publication %}
+        <p class="article-publication" style="font-size: 0.95rem; color: #475569; margin: 0.25rem 0 0.75rem;">{{ external.publication }}</p>
+        {% endif %}
+        {% if external.description %}
+        <p class="article-excerpt">{{ external.description }}</p>
+        {% endif %}
+        {% if external.tags %}
+        <div class="article-tags">
+          {% for tag in external.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+

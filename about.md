@@ -6,7 +6,6 @@ description: Learn more about me and what I do
 
 <div class="about-content">
   <h1>Hey, I'm {{ site.author.name }}.</h1>
-  
   <p>I've been building for the web for over a decade. Currently, I'm a Senior Frontend Engineer at a large tech company where I focus on performance, accessibility, and the developer experience.</p>
   
   <p>My journey started in the early days of jQuery and PHP, but these days you'll mostly find me working with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Node.js</strong>. I am a firm believer in the "use the platform" philosophy and try to leverage native web features whenever possible.</p>

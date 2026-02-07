@@ -1,0 +1,6 @@
+- title: "Testing cloud applications without breaking the bank: Testcontainers and LocalStack"
+  publication: "Ministry of Testing"
+  url: "https://www.ministryoftesting.com/articles/testing-cloud-applications-without-breaking-the-bank-testcontainers-and-localstack"
+  date: 2024-06-18
+  description: "A practical guide to combining Testcontainers and LocalStack to run realistic cloud integration tests locally."
+  tags: ["testing", "cloud", "testcontainers", "localstack", "integration testing"]
