@@ -4,3 +4,4 @@
   date: 2024-06-18
   description: "A practical guide to combining Testcontainers and LocalStack to run realistic cloud integration tests locally."
   tags: ["testing", "cloud", "testcontainers", "localstack", "integration testing"]
+  image: /assets/images/articles/testcontainers-localstack.svg

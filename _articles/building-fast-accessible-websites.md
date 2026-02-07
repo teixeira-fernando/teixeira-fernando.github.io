@@ -3,6 +3,7 @@ title: Building Fast, Accessible Websites
 date: 2024-02-20
 description: Best practices for creating performant and accessible web experiences
 tags: [Performance, Accessibility, Best Practices]
+banner_image: /assets/images/articles/perf-accessibility.svg
 ---
 
 # Building Fast, Accessible Websites

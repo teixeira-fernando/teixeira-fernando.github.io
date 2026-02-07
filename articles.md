@@ -14,9 +14,18 @@ description: Technical articles and blog posts
 {% if articles.size > 0 %}
 <div class="articles-grid">
   {% for article in articles %}
+  {% assign article_image = article.banner_image | default: article.image | default: '/assets/images/articles/default-article.svg' %}
+  {% if article_image contains '://' %}
+    {% assign article_image_url = article_image %}
+  {% else %}
+    {% assign article_image_url = article_image | relative_url %}
+  {% endif %}
   <article class="article-item">
-    <time class="article-date">{{ article.date | date: "%b %d, %Y" }}</time>
-    <div class="article-content-wrapper">
+    <div class="article-visual">
+      <img src="{{ article_image_url }}" alt="{{ article.title }} cover image">
+    </div>
+    <div class="article-body">
+      <time class="article-date">{{ article.date | date: "%b %d, %Y" }}</time>
       <h2 class="article-title"><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h2>
       {% if article.description %}
       <p class="article-excerpt">{{ article.description }}</p>
@@ -44,16 +53,25 @@ description: Technical articles and blog posts
 
   <div class="articles-grid">
     {% for external in external_articles %}
+    {% assign external_image = external.image | default: '/assets/images/articles/default-article.svg' %}
+    {% if external_image contains '://' %}
+      {% assign external_image_url = external_image %}
+    {% else %}
+      {% assign external_image_url = external_image | relative_url %}
+    {% endif %}
     <article class="article-item">
-      {% if external.date %}
-      <time class="article-date">{{ external.date | date: "%b %d, %Y" }}</time>
-      {% endif %}
-      <div class="article-content-wrapper">
+      <div class="article-visual">
+        <img src="{{ external_image_url }}" alt="{{ external.title }} external cover image">
+      </div>
+      <div class="article-body">
+        {% if external.date %}
+        <time class="article-date">{{ external.date | date: "%b %d, %Y" }}</time>
+        {% endif %}
         <h2 class="article-title">
           <a href="{{ external.url }}" target="_blank" rel="noopener">{{ external.title }}</a>
         </h2>
         {% if external.publication %}
-        <p class="article-publication" style="font-size: 0.95rem; color: #475569; margin: 0.25rem 0 0.75rem;">{{ external.publication }}</p>
+        <p class="article-publication">{{ external.publication }}</p>
         {% endif %}
         {% if external.description %}
         <p class="article-excerpt">{{ external.description }}</p>
