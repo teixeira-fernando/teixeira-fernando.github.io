@@ -578,12 +578,26 @@ button:focus {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+.project-banner-link {
+  display: block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.project-banner-link:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
+}
+
 .project-image {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   filter: grayscale(100%);
   transition: filter 0.5s ease;
+  display: block;
+  margin: 0;
 }
 
 .project-card:hover .project-image {

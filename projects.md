@@ -16,7 +16,14 @@ description: Personal and open source projects
   {% for project in projects %}
   <div class="project-card">
     {% if project.image %}
+    {% assign project_link = project.url_external | default: project.repo_url %}
+    {% if project_link %}
+    <a href="{{ project_link }}" target="_blank" rel="noopener noreferrer" class="project-banner-link" aria-label="View {{ project.title }}">
+      <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
+    </a>
+    {% else %}
     <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
+    {% endif %}
     {% endif %}
     <div class="project-content">
       <h3>{{ project.title }}</h3>
