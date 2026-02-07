@@ -4,8 +4,8 @@ title: Home
 ---
 
 <div class="intro">
-  <h1>Software Engineer, Speaker, and <span class="highlight">Lifelong Learner</span>.</h1>
-  <p>I'm {{ site.author.name }}, a developer specializing in building performance-oriented web applications and sharing my experiences through technical writing and public speaking.</p>
+  <h1>Software Engineer in Test, Speaker, and <span class="highlight">Lifelong Learner</span>.</h1>
+  <p>I'm {{ site.author.name }}, a Software Engineer in Test with over 9 years of experience developing test automation solutions and test strategies for different projects. Active contributor in QA communities, conference speaker, and author of technical articles.</p>
 </div>
 
 <div class="section-preview">
