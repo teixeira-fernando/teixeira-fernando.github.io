@@ -590,7 +590,7 @@ button:focus {
 
 .project-card-link:focus {
   outline: 2px solid #2563eb;
-  outline-offset: -2px;
+  outline-offset: 2px;
 }
 
 .project-image {
@@ -686,7 +686,7 @@ button:focus {
 
 .article-card-link:focus {
   outline: 2px solid #2563eb;
-  outline-offset: -2px;
+  outline-offset: 2px;
 }
 
 .article-visual {

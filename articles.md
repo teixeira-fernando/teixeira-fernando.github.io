@@ -62,7 +62,7 @@ description: Technical articles and blog posts
       {% assign external_image_url = external_image | relative_url %}
     {% endif %}
     <article class="article-item">
-      <a href="{{ external.url }}" target="_blank" rel="noopener noreferrer" class="article-card-link" aria-label="Read {{ external.title }}">
+      <a href="{{ external.url }}" target="_blank" rel="noopener noreferrer" class="article-card-link" aria-label="Read {{ external.title }} (opens in new window)">
         <div class="article-visual">
           <img src="{{ external_image_url }}" alt="{{ external.title }} external cover image">
         </div>
