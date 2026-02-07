@@ -4,61 +4,54 @@ title: Home
 ---
 
 <div class="intro">
-  <h1>Welcome</h1>
-  <p>Hi, I'm {{ site.author.name }}. This is my personal website where I share my thoughts, talks, and projects.</p>
-  <p>{{ site.description }}</p>
+  <h1>Software Engineer in Test, Speaker, and <span class="highlight">Lifelong Learner</span>.</h1>
+  <p>I'm {{ site.author.name }}, a Software Engineer in Test with over 9 years of experience developing test automation solutions and test strategies for different projects. Active contributor in QA communities, conference speaker, and author of technical articles.</p>
 </div>
 
 <div class="section-preview">
-  <h2>Latest Articles</h2>
+  <h2>
+    <span>Latest Articles</span>
+    <a href="{{ '/articles' | relative_url }}" class="view-all-link">View all articles</a>
+  </h2>
   {% assign latest_articles = site.articles | sort: 'date' | reverse | limit: 3 %}
   {% if latest_articles.size > 0 %}
   <ul class="preview-list">
     {% for article in latest_articles %}
     <li>
-      <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
-      {% if article.date %}<span class="content-meta"> - {{ article.date | date: "%B %d, %Y" }}</span>{% endif %}
+      <h3 class="article-title"><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3>
+      <p>{{ article.excerpt | default: article.description }}</p>
+      {% if article.date %}<time class="content-meta">{{ article.date | date: "%B %d, %Y" }}</time>{% endif %}
     </li>
     {% endfor %}
   </ul>
-  <p><a href="{{ '/articles' | relative_url }}" class="view-all-link">View all articles →</a></p>
   {% else %}
   <p>No articles yet. Check back soon!</p>
   {% endif %}
 </div>
 
 <div class="section-preview">
-  <h2>Recent Talks</h2>
-  {% assign latest_talks = site.talks | sort: 'date' | reverse | limit: 3 %}
+  <h2>
+    <span>Recent Talks</span>
+    <a href="{{ '/talks' | relative_url }}" class="view-all-link">View all talks</a>
+  </h2>
+  {% assign latest_talks = site.talks | sort: 'date' | reverse | limit: 2 %}
   {% if latest_talks.size > 0 %}
-  <ul class="preview-list">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
     {% for talk in latest_talks %}
-    <li>
-      <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
-      {% if talk.date %}<span class="content-meta"> - {{ talk.date | date: "%B %d, %Y" }}</span>{% endif %}
-    </li>
+    <div class="talk-card">
+      <h3>{{ talk.title }}</h3>
+      <span class="talk-event">{{ talk.event }}</span>
+      <p class="talk-description">{{ talk.description }}</p>
+      {% if talk.video_url or talk.slides_url %}
+      <div class="talk-links">
+        {% if talk.video_url %}<a href="{{ talk.video_url }}">Video</a>{% endif %}
+        {% if talk.slides_url %}<a href="{{ talk.slides_url }}">Slides</a>{% endif %}
+      </div>
+      {% endif %}
+    </div>
     {% endfor %}
-  </ul>
-  <p><a href="{{ '/talks' | relative_url }}" class="view-all-link">View all talks →</a></p>
+  </div>
   {% else %}
   <p>No talks yet. Check back soon!</p>
-  {% endif %}
-</div>
-
-<div class="section-preview">
-  <h2>Featured Projects</h2>
-  {% assign latest_projects = site.projects | sort: 'date' | reverse | limit: 3 %}
-  {% if latest_projects.size > 0 %}
-  <ul class="preview-list">
-    {% for project in latest_projects %}
-    <li>
-      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-      {% if project.description %}<span class="content-meta"> - {{ project.description }}</span>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-  <p><a href="{{ '/projects' | relative_url }}" class="view-all-link">View all projects →</a></p>
-  {% else %}
-  <p>No projects yet. Check back soon!</p>
   {% endif %}
 </div>

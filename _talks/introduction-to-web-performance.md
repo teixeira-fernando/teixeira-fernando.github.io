@@ -4,6 +4,8 @@ date: 2024-03-10
 event: Tech Conference 2024
 location: San Francisco, CA
 description: A comprehensive talk about web performance optimization techniques
+video_url: https://youtube.com
+slides_url: https://slideshare.net
 ---
 
 # Introduction to Web Performance
