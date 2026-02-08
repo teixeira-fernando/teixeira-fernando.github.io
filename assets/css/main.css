@@ -655,11 +655,26 @@ button:focus {
   overflow: hidden;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.project-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+}
+
+.project-card-link:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
 }
 
 .project-image {
@@ -668,6 +683,8 @@ button:focus {
   object-fit: cover;
   filter: grayscale(100%);
   transition: filter 0.5s ease;
+  display: block;
+  margin: 0;
 }
 
 .project-card:hover .project-image {
@@ -676,6 +693,7 @@ button:focus {
 
 .project-content {
   padding: 1.5rem;
+  flex: 1;
 }
 
 .project-card h3 {
@@ -683,6 +701,7 @@ button:focus {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color: #0f172a;
 }
 
 .project-description {
@@ -690,15 +709,17 @@ button:focus {
   font-size: 0.875rem;
   line-height: 1.5;
   margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .project-links {
   display: flex;
   gap: 1rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
-.project-links a {
+.project-links a,
+.project-link-button {
   color: #0f172a;
   font-size: 0.75rem;
   font-weight: 700;
@@ -707,9 +728,12 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  position: relative;
+  z-index: 1;
 }
 
-.project-links a:hover {
+.project-links a:hover,
+.project-link-button:hover {
   color: #2563eb;
 }
 
@@ -736,6 +760,19 @@ button:focus {
   box-shadow: 0 25px 55px -25px rgba(15, 23, 42, 0.55);
 }
 
+.article-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.article-card-link:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
 .article-visual {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -755,6 +792,7 @@ button:focus {
   flex-direction: column;
   gap: 0.85rem;
   height: 100%;
+  flex: 1;
 }
 
 .article-date {
@@ -770,6 +808,7 @@ button:focus {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
+  color: #0f172a;
 }
 
 .article-title a {

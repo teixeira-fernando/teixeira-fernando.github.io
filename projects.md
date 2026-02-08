@@ -14,33 +14,32 @@ description: Personal and open source projects
 {% if projects.size > 0 %}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
   {% for project in projects %}
+  {% assign project_link = project.url_external | default: project.repo_url %}
   <div class="project-card">
-    {% if project.image %}
-    <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
+    {% if project_link %}
+    <a href="{{ project_link }}" target="_blank" rel="noopener noreferrer" class="project-card-link" aria-label="View {{ project.title }}">
     {% endif %}
-    <div class="project-content">
-      <h3>{{ project.title }}</h3>
-      {% if project.tech %}
-      <div class="project-tech">
-        {% for tech in project.tech %}
-        <span class="tech-badge">{{ tech }}</span>
-        {% endfor %}
-      </div>
+      {% if project.image %}
+      <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
       {% endif %}
-      {% if project.description %}
-      <p class="project-description">{{ project.description }}</p>
-      {% elsif project.excerpt %}
-      <p class="project-description">{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
-      <div class="project-links">
-        {% if project.repo_url %}
-        <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <div class="project-content">
+        <h3>{{ project.title }}</h3>
+        {% if project.tech %}
+        <div class="project-tech">
+          {% for tech in project.tech %}
+          <span class="tech-badge">{{ tech }}</span>
+          {% endfor %}
+        </div>
         {% endif %}
-        {% if project.url_external %}
-        <a href="{{ project.url_external }}" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        {% if project.description %}
+        <p class="project-description">{{ project.description }}</p>
+        {% elsif project.excerpt %}
+        <p class="project-description">{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
         {% endif %}
       </div>
-    </div>
+    {% if project_link %}
+    </a>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
