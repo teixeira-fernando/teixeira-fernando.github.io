@@ -775,7 +775,7 @@ button:focus {
 
 .article-visual {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 21 / 9;
   background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
 }
 
