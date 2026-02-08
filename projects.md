@@ -40,14 +40,6 @@ description: Personal and open source projects
     {% if project_link %}
     </a>
     {% endif %}
-    <div class="project-links">
-      {% if project.repo_url %}
-      <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer" class="project-link-button">GitHub</a>
-      {% endif %}
-      {% if project.url_external %}
-      <a href="{{ project.url_external }}" target="_blank" rel="noopener noreferrer" class="project-link-button">Live Demo</a>
-      {% endif %}
-    </div>
   </div>
   {% endfor %}
 </div>
