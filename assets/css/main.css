@@ -382,6 +382,7 @@ pre code {
 
 .intro-profile-image {
   width: 160px;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 999px;
@@ -883,6 +884,7 @@ button:focus {
 
 .about-profile-image {
   width: 220px;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 24px;
