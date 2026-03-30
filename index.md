@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="intro">
-  <img src="{{ '/images/new-profile-squared.JPG' | relative_url }}" alt="Portrait of {{ site.author.name }}" class="intro-profile-image">
+  <img src="{{ '/images/new-profile-squared.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" class="intro-profile-image">
   <h1>Software Engineer in Test, Speaker, and <span class="highlight">Lifelong Learner</span>.</h1>
   <p>I'm {{ site.author.name }}, a Software Engineer in Test with over 9 years of experience developing test automation solutions and test strategies for different projects. Active contributor in QA communities, conference speaker, and author of technical articles.</p>
 </div>
