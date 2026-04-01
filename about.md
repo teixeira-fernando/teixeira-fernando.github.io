@@ -5,7 +5,7 @@ description: Learn more about me and what I do
 ---
 
 <div class="about-content">
-  <img src="{{ '/images/profile-about.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" class="about-profile-image">
+  <img src="{{ '/images/profile-about-resized.webp' | relative_url }}" alt="Portrait of {{ site.author.name }}" class="about-profile-image">
   <h1>Hey, I'm {{ site.author.name }}.</h1>
   <p>I've been building for the web for over a decade. Currently, I'm a Senior Frontend Engineer at a large tech company where I focus on performance, accessibility, and the developer experience.</p>
   
