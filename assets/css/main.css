@@ -617,6 +617,33 @@ button:focus {
   content: ' →';
 }
 
+.back-link {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #2563eb;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #1d4ed8;
+  background-color: transparent;
+  transform: none;
+  box-shadow: none;
+  border-bottom-color: transparent;
+}
+
+.back-link::before {
+  content: '← ';
+}
+
 /* Article/Talk/Project specific styles */
 .article-tags,
 .talk-meta,
@@ -638,17 +665,58 @@ button:focus {
 }
 
 /* Talks card styling */
+.talks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .talk-card {
   background-color: #f8fafc;
   border: 1px solid #f1f5f9;
   border-radius: 1rem;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  transition: border-color 0.2s ease;
+  margin-bottom: 0;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
 }
 
 .talk-card:hover {
   border-color: #bfdbfe;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.talk-card-overlay-link {
+  display: block;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+.talk-card-header,
+.talk-description {
+  position: relative;
+  z-index: 0;
+}
+
+.talk-card-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.talk-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
 }
 
 .talk-card h3 {
@@ -677,11 +745,13 @@ button:focus {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .talk-links a {
   color: #0f172a;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-decoration: none;
   transition: color 0.2s ease;
