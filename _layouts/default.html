@@ -6,6 +6,11 @@
     
     <main class="page-content">
       <div class="wrapper">
+        {% if page.collection == 'talks' %}
+          <a href="{{ '/talks' | relative_url }}" class="back-link">Back to all Talks</a>
+        {% elsif page.collection == 'articles' %}
+          <a href="{{ '/articles' | relative_url }}" class="back-link">Back to all Articles</a>
+        {% endif %}
         {{ content }}
       </div>
     </main>

@@ -12,27 +12,36 @@ description: Conference talks and presentations
 {% assign talks = site.talks | sort: 'date' | reverse %}
 
 {% if talks.size > 0 %}
-<div style="display: grid; gap: 3rem;">
+<div class="talks-list">
   {% for talk in talks %}
-  <div style="border-bottom: 1px solid #f1f5f9; padding-bottom: 3rem;">
-    <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.25rem;">
-      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem;">
-        <h2 style="font-size: 1.5rem; font-weight: 700; margin: 0;">{{ talk.title }}</h2>
+  <article class="talk-card">
+    <a
+      class="talk-card-overlay-link"
+      href="{{ talk.url | relative_url }}"
+      aria-label="Read talk: {{ talk.title }}"
+    ></a>
+
+    <header class="talk-card-header">
+      <div class="talk-card-title-row">
+        <h2 class="talk-card-title">{{ talk.title }}</h2>
         {% if talk.date %}
-        <time class="content-meta" style="margin: 0;">{{ talk.date | date: "%B %Y" }}</time>
+        <time class="content-meta">{{ talk.date | date: "%B %Y" }}</time>
         {% endif %}
       </div>
+
       {% if talk.event %}
-      <p class="talk-event" style="margin: 0;">{{ talk.event }}</p>
+      <p class="talk-event">{{ talk.event }}</p>
       {% endif %}
-    </div>
-    {% if talk.description %}
-    <p style="margin-top: 1rem; color: #64748b; line-height: 1.75; max-width: 42rem;">{{ talk.description }}</p>
-    {% elsif talk.excerpt %}
-    <p style="margin-top: 1rem; color: #64748b; line-height: 1.75; max-width: 42rem;">{{ talk.excerpt | strip_html | truncatewords: 50 }}</p>
+    </header>
+
+    {% if talk.excerpt %}
+    <p class="talk-description">{{ talk.excerpt | strip_html | truncatewords: 50 }}</p>
+    {% elsif talk.description %}
+    <p class="talk-description">{{ talk.description }}</p>
     {% endif %}
+
     {% if talk.video_url or talk.slides_url %}
-    <div class="talk-links" style="margin-top: 1.5rem;">
+    <div class="talk-links">
       {% if talk.video_url %}
       <a href="{{ talk.video_url }}" target="_blank" rel="noopener noreferrer">Watch Video</a>
       {% endif %}
@@ -41,7 +50,7 @@ description: Conference talks and presentations
       {% endif %}
     </div>
     {% endif %}
-  </div>
+  </article>
   {% endfor %}
 </div>
 {% else %}
