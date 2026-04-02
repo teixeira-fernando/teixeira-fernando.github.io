@@ -1,11 +1,10 @@
 ---
-title: Introduction to Web Performance
-date: 2024-03-10
-event: Tech Conference 2024
-location: San Francisco, CA
-description: A comprehensive talk about web performance optimization techniques
-video_url: https://youtube.com
-slides_url: https://slideshare.net
+title: Testing Cloud Applications Without Breaking the Bank. Testcontainers & LocalStack
+date: 2025-10-01
+event: HUSTEF 2025
+location: Budapest, Hungary
+description: A comprehensive talk about testing cloud applications using Testcontainers and LocalStack to save costs
+video_url: https://www.youtube.com/watch?v=paSJ_C0fqzQ
 ---
 
 # Introduction to Web Performance
