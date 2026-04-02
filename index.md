@@ -10,27 +10,6 @@ title: Home
 
 <div class="section-preview">
   <h2>
-    <span>Latest Articles</span>
-    <a href="{{ '/articles' | relative_url }}" class="view-all-link">View all articles</a>
-  </h2>
-  {% assign latest_articles = site.articles | sort: 'date' | reverse | limit: 3 %}
-  {% if latest_articles.size > 0 %}
-  <ul class="preview-list">
-    {% for article in latest_articles %}
-    <li>
-      <h3 class="article-title"><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3>
-      <p>{{ article.excerpt | default: article.description }}</p>
-      {% if article.date %}<time class="content-meta">{{ article.date | date: "%B %d, %Y" }}</time>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p>No articles yet. Check back soon!</p>
-  {% endif %}
-</div>
-
-<div class="section-preview">
-  <h2>
     <span>Recent Talks</span>
     <a href="{{ '/talks' | relative_url }}" class="view-all-link">View all talks</a>
   </h2>
@@ -53,5 +32,26 @@ title: Home
   </div>
   {% else %}
   <p>No talks yet. Check back soon!</p>
+  {% endif %}
+</div>
+
+<div class="section-preview">
+  <h2>
+    <span>Latest Articles</span>
+    <a href="{{ '/articles' | relative_url }}" class="view-all-link">View all articles</a>
+  </h2>
+  {% assign latest_articles = site.articles | sort: 'date' | reverse | limit: 3 %}
+  {% if latest_articles.size > 0 %}
+  <ul class="preview-list">
+    {% for article in latest_articles %}
+    <li>
+      <h3 class="article-title"><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3>
+      <p>{{ article.excerpt | default: article.description }}</p>
+      {% if article.date %}<time class="content-meta">{{ article.date | date: "%B %d, %Y" }}</time>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No articles yet. Check back soon!</p>
   {% endif %}
 </div>
