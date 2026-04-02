@@ -51,7 +51,7 @@ description: Technical articles and blog posts
 
 {% assign external_articles = site.data.external_articles | sort: 'date' | reverse %}
 {% if external_articles and external_articles.size > 0 %}
-<section class="external-articles" style="margin-top: 4rem;">
+<section class="external-articles" style="margin-top: 2rem;">
 
   <div class="articles-grid">
     {% for external in external_articles %}

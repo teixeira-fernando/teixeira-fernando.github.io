@@ -1,7 +1,15 @@
 - title: "Testing cloud applications without breaking the bank: Testcontainers and LocalStack"
   publication: "Ministry of Testing"
   url: "https://www.ministryoftesting.com/articles/testing-cloud-applications-without-breaking-the-bank-testcontainers-and-localstack"
-  date: 2024-06-18
-  description: "A practical guide to combining Testcontainers and LocalStack to run realistic cloud integration tests locally."
+  date: 2025-04-01
+  description: "Discover cost-saving strategies and tools that'll improve your automated tests for cloud applications"
   tags: ["testing", "cloud", "testcontainers", "localstack", "integration testing"]
-  image: /assets/images/articles/testcontainers-localstack.svg
+  image: /assets/images/articles/piggy-bank.svg
+
+- title: "Software Quality and Developer Experience: Why testers should care about it"
+  publication: "Ministry of Testing"
+  url: "https://www.ministryoftesting.com/articles/software-quality-and-developer-experience-why-testers-should-care-about-it"
+  date: 2024-06-16
+  description: "Understand how improving the developer experience can easily and efficiently contribute to creating high-quality software"
+  tags: ["software quality", "developer experience", "testing"]
+  image: /assets/images/articles/development-experience.svg
