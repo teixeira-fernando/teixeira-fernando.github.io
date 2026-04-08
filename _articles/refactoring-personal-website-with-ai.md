@@ -1,48 +1,47 @@
 ---
-title: Refactoring my personal website with the help of Github Copilot
+title: Refactoring my personal website with the help of GitHub Copilot
 date: 2026-04-07
-description: Personal Experience of Refactoring a Website with the help of Github Copilot. Learnings, challenges, and outcomes.
+description: Personal experience refactoring a website with the help of GitHub Copilot - learnings, challenges, and outcomes.
 tags: [AI, GitHub Copilot, Refactoring]
-banner_image: /assets/images/articles/perf-accessibility.svg
+banner_image: /assets/images/articles/personal-website-with-ai/ai-code-refactoring.svg
 ---
 
-# Refactoring my personal website with the help of Github Copilot
+# Refactoring my personal website with the help of GitHub Copilot
 
 ## Motivation
 
-This year, I wanted to improve my old personal website, which was basically links to articles, talks, projects and social media. Since i have been creating more content lately, it would be good to improve my personal website, with a better UI and make it more organized.
+This year, I wanted to improve my old personal website, which was basically a list of links to articles, talks, projects, and social media. Since I’ve been creating more content lately, it felt like the right time to give it a better UI and a more organized structure.
 
 ## Goal and technical decisions
 
-I wanted to continue usign Jekyll, since it was the framework which I was using before and I really liked it. It offered a lot of flexibility and also I could very easily create new articles and pages with markdown files.
+I wanted to keep using Jekyll, since it’s the framework I was already using and I really like it. It offers a lot of flexibility, and it makes it easy to create new articles and pages using Markdown.
 
-However, if I wanted to modernize my website, that would require some extra customization, especially in the frontend, with some CSS and HTML which are not my area of expertise.
+The challenge was that modernizing the site would require more frontend customization—mainly CSS and HTML—which aren’t my areas of expertise.
 
-So, I wanted to try to get some help from AI to do the heavy work for me and see if it would be able to achieve something close to what I had in my mind. Since I had a clear picture in my head of what I wanted to have in the end, that helped me to think about the process of refactoring, how I could start and how to ask for help from AI.
+So I decided to lean on AI to do the heavy lifting and see how close it could get to what I had in mind. Having a clear picture of the desired end result helped a lot: it made it easier to plan the refactor, decide where to start, and phrase requests in a way an agent could execute.
 
 ## Getting started with the refactoring
 
-I have been using mostly Github Copilot with some new but not the latest Open AI models available, like GPT 5.2 and GPT 5.2-Codex, and that helps a lot in my daily work, so I wanted to also use the same here to give some tasks to agents.
+I’ve been using GitHub Copilot in my day-to-day work with newer (though not always the latest) OpenAI models like GPT-5.2 and GPT-5.2-Codex. Since that setup already works well for me, I decided to use it here too and delegate tasks to agents.
 
-I use agents both locally and on cloud. 
+I use agents both locally and in the cloud.
 
-The advantages of using cloud agents is that:
+The advantages of cloud agents are:
 
-* Built-in tool ecosystems: Cloud agents often come pre-integrated with APIs, MCP servers, Browsers and other third-party tools which help the models to better iterate and validate the response being generated
-* Access to more powerful models: Cloud agents typically run on latest available models.
-* Better autonomy and orchestration: In general, I think the cloud agents can better run longer workflows and can work more independently before answering, and that also reduces your work when reviewing the generated code.
+* Built-in tool ecosystems: Cloud agents often come pre-integrated with APIs, MCP servers, browsers, and other third-party tools, which helps them iterate and validate results.
+* Access to more powerful models: Cloud agents typically run on the latest available models.
+* Better autonomy and orchestration: In my experience, cloud agents handle longer workflows more reliably and can work more independently before answering, which reduces the effort needed to review the generated code.
 
-The main downside is that it takes much more time to get an answer for a certain task and there much more issues in terms of data privacy, so it does really make sense to use cloud agents for everything, otherwise, it will be become a bottleneck in your workflow.
+The downside is that you usually wait longer for results, and there are often more data-privacy considerations. So it doesn’t make sense to use cloud agents for everything—otherwise they can become a workflow bottleneck.
 
-Small tip: When using Local agents, what generally helps me a lot is to use the "plan" option with the initial prompt. For me, that avoids a lot that back and forth of reiterating and misunderstandings that can help when sending an instruction to an agent. That makes sure that your understanding and the agent understanding are aligned, before starting any implementation.
+Small tip: When using local agents, the “plan” option in the initial prompt helps a lot. It reduces back-and-forth, prevents misunderstandings, and aligns your expectations with the agent’s before it starts implementing.
 
-
-(PUT here screenshot to choose option of Plan)
+TODO: Add a screenshot showing the “Plan” option.
 
 ## Results and conclusion
 
-It took quite a few pull requests and different prompts to achieve what I wanted, but it was still easier and faster than having to work with the CSS and HTML files on my own.
+It took quite a few pull requests and iterations to reach what I wanted, but it was still easier (and faster) than doing all the CSS and HTML work on my own.
 
-Some things could be for sure simplified, 
+Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise text. That meant extra iterations when the AI interpreted things differently, and occasionally I just made small changes myself.
 
-And the nice thing is: Even when not using the latest AI models, the niciest MCP servers and setups or other Paid AI tools, it was still possible to have great results. I know that if i had used some of them, I could get some results faster and better, but that´s fine. That is the beauty of trying things out on personal projects.
+The nice thing is that—even without the latest models, the fanciest MCP server setups, or other paid AI tools—it was still possible to get great results. I’m sure some of those tools could have made things faster, but that’s fine. That’s the beauty of experimenting on personal projects.
