@@ -26,7 +26,7 @@ title: Home
       <a
         class="talk-card-overlay-link"
         href="{{ talk.url | relative_url }}"
-        aria-label="Read talk: {{ talk.title }}"
+        aria-label="View talk details: {{ talk.title }}"
       ></a>
 
       <header class="talk-card-header">
@@ -51,10 +51,10 @@ title: Home
       {% if talk.video_url or talk.slides_url %}
       <div class="talk-links">
         {% if talk.video_url %}
-        <a href="{{ talk.video_url }}" target="_blank" rel="noopener noreferrer">Watch Video</a>
+        <a href="{{ talk.video_url }}" target="_blank" rel="noopener noreferrer" aria-label="Watch video for {{ talk.title }} (opens in new tab)">Watch Video</a>
         {% endif %}
         {% if talk.slides_url %}
-        <a href="{{ talk.slides_url }}" target="_blank" rel="noopener noreferrer">View Slides</a>
+        <a href="{{ talk.slides_url }}" target="_blank" rel="noopener noreferrer" aria-label="View slides for {{ talk.title }} (opens in new tab)">View Slides</a>
         {% endif %}
       </div>
       {% endif %}
@@ -84,7 +84,7 @@ title: Home
     <article class="article-item">
       <a href="{{ article.url | relative_url }}" class="article-card-link" aria-label="Read {{ article.title }}">
         <div class="article-visual">
-          <img src="{{ article_image_url }}" alt="{{ article.title }} cover image">
+          <img src="{{ article_image_url }}" alt="{{ article.title }}">
         </div>
         <div class="article-body">
           {% if article.date %}
