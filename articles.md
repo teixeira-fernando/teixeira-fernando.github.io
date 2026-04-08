@@ -14,33 +14,26 @@ description: Technical articles and blog posts
 {% if articles.size > 0 %}
 <div class="articles-grid">
   {% for article in articles %}
-  {% assign article_image = article.banner_image | default: article.image | default: '/assets/images/articles/default-article.svg' %}
-  {% if article_image contains '://' %}
-    {% assign article_image_url = article_image %}
-  {% else %}
-    {% assign article_image_url = article_image | relative_url %}
-  {% endif %}
-  <article class="article-item">
+  <article class="article-item article-item--internal">
     <a href="{{ article.url | relative_url }}" class="article-card-link" aria-label="Read {{ article.title }}">
-      <div class="article-visual">
-        <img src="{{ article_image_url }}" alt="{{ article.title }} cover image">
-      </div>
-      <div class="article-body">
+      <div class="article-meta-row">
         <time class="article-date">{{ article.date | date: "%b %d, %Y" }}</time>
-        <h2 class="article-title">{{ article.title }}</h2>
-        {% if article.description %}
-        <p class="article-excerpt">{{ article.description }}</p>
-        {% elsif article.excerpt %}
-        <p class="article-excerpt">{{ article.excerpt | strip_html | truncatewords: 30 }}</p>
-        {% endif %}
-        {% if article.tags %}
-        <div class="article-tags">
-          {% for tag in article.tags %}
-          <span class="tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
+        <span class="article-type">Article</span>
       </div>
+      <h2 class="article-title">{{ article.title }}</h2>
+      {% if article.description %}
+      <p class="article-excerpt">{{ article.description }}</p>
+      {% elsif article.excerpt %}
+      <p class="article-excerpt">{{ article.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+      {% if article.tags %}
+      <div class="article-tags">
+        {% for tag in article.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <span class="article-cta">Read article</span>
     </a>
   </article>
   {% endfor %}
@@ -51,44 +44,40 @@ description: Technical articles and blog posts
 
 {% assign external_articles = site.data.external_articles | sort: 'date' | reverse %}
 {% if external_articles and external_articles.size > 0 %}
-<section class="external-articles" style="margin-top: 2rem;">
+<section class="external-articles" style="margin-top: 3rem;">
+  <div class="external-header">
+    <h2>External Articles</h2>
+    <p>Guest posts and collaborations published on other platforms.</p>
+  </div>
 
   <div class="articles-grid">
     {% for external in external_articles %}
-    {% assign external_image = external.image | default: '/assets/images/articles/default-article.svg' %}
-    {% if external_image contains '://' %}
-      {% assign external_image_url = external_image %}
-    {% else %}
-      {% assign external_image_url = external_image | relative_url %}
-    {% endif %}
-    <article class="article-item">
+    <article class="article-item article-item--external">
       <a href="{{ external.url }}" target="_blank" rel="noopener noreferrer" class="article-card-link" aria-label="Read {{ external.title }} (opens in new window)">
-        <div class="article-visual">
-          <img src="{{ external_image_url }}" alt="{{ external.title }} external cover image">
-        </div>
-        <div class="article-body">
+        <div class="article-meta-row">
           {% if external.date %}
           <time class="article-date">{{ external.date | date: "%b %d, %Y" }}</time>
           {% endif %}
-          <h2 class="article-title">{{ external.title }}</h2>
-          {% if external.publication %}
-          <p class="article-publication">{{ external.publication }}</p>
-          {% endif %}
-          {% if external.description %}
-          <p class="article-excerpt">{{ external.description }}</p>
-          {% endif %}
-          {% if external.tags %}
-          <div class="article-tags">
-            {% for tag in external.tags %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-          {% endif %}
+          <span class="article-type">External</span>
         </div>
+        <h2 class="article-title">{{ external.title }}</h2>
+        {% if external.publication %}
+        <p class="article-publication">{{ external.publication }}</p>
+        {% endif %}
+        {% if external.description %}
+        <p class="article-excerpt">{{ external.description }}</p>
+        {% endif %}
+        {% if external.tags %}
+        <div class="article-tags">
+          {% for tag in external.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <span class="article-cta">Read article</span>
       </a>
     </article>
     {% endfor %}
   </div>
 </section>
 {% endif %}
-
