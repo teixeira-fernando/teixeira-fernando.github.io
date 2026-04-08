@@ -14,7 +14,7 @@ description: Technical articles and blog posts
 {% if articles.size > 0 %}
 <div class="articles-grid">
   {% for article in articles %}
-  <article class="article-item article-item--internal">
+  <article class="article-item">
     <a href="{{ article.url | relative_url }}" class="article-card-link" aria-label="Read {{ article.title }}">
       <div class="article-meta-row">
         <time class="article-date">{{ article.date | date: "%b %d, %Y" }}</time>
@@ -44,7 +44,7 @@ description: Technical articles and blog posts
 
 {% assign external_articles = site.data.external_articles | sort: 'date' | reverse %}
 {% if external_articles and external_articles.size > 0 %}
-<section class="external-articles" style="margin-top: 3rem;">
+<section class="external-articles">
   <div class="external-header">
     <h2>External Articles</h2>
     <p>Guest posts and collaborations published on other platforms.</p>

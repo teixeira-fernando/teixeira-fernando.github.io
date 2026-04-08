@@ -983,6 +983,10 @@ button:focus {
   margin-bottom: 2rem;
 }
 
+.external-articles {
+  margin-top: 3rem;
+}
+
 .external-header h2 {
   margin-bottom: 0.25rem;
 }
