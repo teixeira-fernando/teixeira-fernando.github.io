@@ -84,7 +84,7 @@ title: Home
     <article class="article-item">
       <a href="{{ article.url | relative_url }}" class="article-card-link" aria-label="Read {{ article.title }}">
         <div class="article-visual">
-          <img src="{{ article_image_url }}" alt="">
+          <img src="{{ article_image_url }}" alt="Cover illustration for {{ article.title }}">
         </div>
         <div class="article-body">
           {% if article.date %}

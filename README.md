@@ -87,7 +87,7 @@ banner_image: /assets/images/articles/your-article-cover.svg
 
 Your content here...
 ```
-If `banner_image` is omitted, the site falls back to `/assets/images/articles/default-article.svg` for article cards.
+Use `banner_image` (or `image` as an alias) to set the article card image. If omitted, the site falls back to `/assets/images/articles/default-article.svg`.
 
 #### Talks
 Create a new file in `_talks/`:
