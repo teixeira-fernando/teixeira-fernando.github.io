@@ -890,10 +890,6 @@ button:focus {
   background: linear-gradient(90deg, #2563eb, #38bdf8);
 }
 
-.article-item--external .article-card-link::before {
-  background: linear-gradient(90deg, #7c3aed, #ec4899);
-}
-
 .article-card-link:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
@@ -923,8 +919,8 @@ button:focus {
 }
 
 .article-type {
-  background-color: #eef2ff;
-  color: #4338ca;
+  background-color: #e0e7ff;
+  color: #312e81;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -934,8 +930,8 @@ button:focus {
 }
 
 .article-item--external .article-type {
-  background-color: #f5f3ff;
-  color: #7c3aed;
+  background-color: #fce7f3;
+  color: #9d174d;
 }
 
 .article-title {
