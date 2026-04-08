@@ -18,26 +18,52 @@ title: Home
     <span>Recent Talks</span>
     <a href="{{ '/talks' | relative_url }}" class="view-all-link">View all talks</a>
   </h2>
-  {% assign latest_talks = site.talks | sort: 'date' | reverse | limit: 2 %}
-  {% if latest_talks.size > 0 %}
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+{% assign latest_talks = site.talks | sort: 'date' | reverse | limit: 2 %}
+{% if latest_talks.size > 0 %}
+  <div class="talks-list">
     {% for talk in latest_talks %}
-    <div class="talk-card">
-      <h3>{{ talk.title }}</h3>
-      <span class="talk-event">{{ talk.event }}</span>
+    <article class="talk-card">
+      <a
+        class="talk-card-overlay-link"
+        href="{{ talk.url | relative_url }}"
+        aria-label="Read talk: {{ talk.title }}"
+      ></a>
+
+      <header class="talk-card-header">
+        <div class="talk-card-title-row">
+          <h3 class="talk-card-title">{{ talk.title }}</h3>
+          {% if talk.date %}
+          <time class="content-meta">{{ talk.date | date: "%B %Y" }}</time>
+          {% endif %}
+        </div>
+
+        {% if talk.event %}
+        <p class="talk-event">{{ talk.event }}</p>
+        {% endif %}
+      </header>
+
+      {% if talk.excerpt %}
+      <p class="talk-description">{{ talk.excerpt | strip_html | truncatewords: 50 }}</p>
+      {% elsif talk.description %}
       <p class="talk-description">{{ talk.description }}</p>
+      {% endif %}
+
       {% if talk.video_url or talk.slides_url %}
       <div class="talk-links">
-        {% if talk.video_url %}<a href="{{ talk.video_url }}">Video</a>{% endif %}
-        {% if talk.slides_url %}<a href="{{ talk.slides_url }}">Slides</a>{% endif %}
+        {% if talk.video_url %}
+        <a href="{{ talk.video_url }}" target="_blank" rel="noopener noreferrer">Watch Video</a>
+        {% endif %}
+        {% if talk.slides_url %}
+        <a href="{{ talk.slides_url }}" target="_blank" rel="noopener noreferrer">View Slides</a>
+        {% endif %}
       </div>
       {% endif %}
-    </div>
+    </article>
     {% endfor %}
   </div>
-  {% else %}
+{% else %}
   <p>No talks yet. Check back soon!</p>
-  {% endif %}
+{% endif %}
 </div>
 
 <div class="section-preview">
@@ -45,18 +71,44 @@ title: Home
     <span>Latest Articles</span>
     <a href="{{ '/articles' | relative_url }}" class="view-all-link">View all articles</a>
   </h2>
-  {% assign latest_articles = site.articles | sort: 'date' | reverse | limit: 3 %}
-  {% if latest_articles.size > 0 %}
-  <ul class="preview-list">
+{% assign latest_articles = site.articles | sort: 'date' | reverse | limit: 3 %}
+{% if latest_articles.size > 0 %}
+  <div class="articles-grid">
     {% for article in latest_articles %}
-    <li>
-      <h3 class="article-title"><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3>
-      <p>{{ article.excerpt | default: article.description }}</p>
-      {% if article.date %}<time class="content-meta">{{ article.date | date: "%B %d, %Y" }}</time>{% endif %}
-    </li>
+    {% assign article_image = article.banner_image | default: article.image | default: '/assets/images/articles/default-article.svg' %}
+    {% if article_image contains '://' %}
+      {% assign article_image_url = article_image %}
+    {% else %}
+      {% assign article_image_url = article_image | relative_url %}
+    {% endif %}
+    <article class="article-item">
+      <a href="{{ article.url | relative_url }}" class="article-card-link" aria-label="Read {{ article.title }}">
+        <div class="article-visual">
+          <img src="{{ article_image_url }}" alt="{{ article.title }} cover image">
+        </div>
+        <div class="article-body">
+          {% if article.date %}
+          <time class="article-date">{{ article.date | date: "%b %d, %Y" }}</time>
+          {% endif %}
+          <h3 class="article-title">{{ article.title }}</h3>
+          {% if article.description %}
+          <p class="article-excerpt">{{ article.description }}</p>
+          {% elsif article.excerpt %}
+          <p class="article-excerpt">{{ article.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+          {% if article.tags %}
+          <div class="article-tags">
+            {% for tag in article.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </a>
+    </article>
     {% endfor %}
-  </ul>
-  {% else %}
+  </div>
+{% else %}
   <p>No articles yet. Check back soon!</p>
-  {% endif %}
+{% endif %}
 </div>
