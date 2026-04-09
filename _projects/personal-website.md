@@ -1,11 +1,11 @@
 ---
 title: Personal Website
-date: 2024-01-01
-description: A fast, accessible personal website built with Jekyll
-url_external: https://github.com/yourusername/personal-website
-repo_url: https://github.com/yourusername/personal-website
+date: 2026-04-09
+description: My personal website built with Jekyll
+url_external: https://github.com/teixeira-fernando/personal-website
+repo_url: https://github.com/teixeira-fernando/personal-website
 tech: [Jekyll, HTML, CSS]
-image: https://picsum.photos/seed/website/600/400
+image: /assets/images/projects/new-website.png
 ---
 
 # Personal Website
