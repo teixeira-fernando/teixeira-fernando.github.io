@@ -54,17 +54,8 @@ title: Home
 {% if latest_articles.size > 0 %}
   <div class="articles-grid">
     {% for article in latest_articles %}
-    {% assign article_image = article.banner_image | default: article.image | default: '/assets/images/articles/default-article.svg' %}
-    {% if article_image contains '://' %}
-      {% assign article_image_url = article_image %}
-    {% else %}
-      {% assign article_image_url = article_image | relative_url %}
-    {% endif %}
     <article class="article-item">
       <a href="{{ article.url | relative_url }}" class="article-card-link" aria-label="Read {{ article.title }}">
-        <div class="article-visual">
-          <img src="{{ article_image_url }}" alt="Cover illustration for {{ article.title }}">
-        </div>
         <div class="article-body">
           {% if article.date %}
           <time class="article-date">{{ article.date | date: "%b %d, %Y" }}</time>
