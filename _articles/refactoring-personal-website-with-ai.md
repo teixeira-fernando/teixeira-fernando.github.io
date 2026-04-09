@@ -42,7 +42,7 @@ Small tip: When using local agents, the “plan” option in the initial prompt 
 
 Another thing was about trying out different ideas and designs without much effort. I could just ask the agent to create a new version of the homepage with a different layout, and then compare them side by side to see which one I liked better. 
 
-This made it easier to explore different possibilities and find the one that suited my style and needs the best. It also made the process more fun and creative, since I could see the results of my requests in real time and adjust them as I went along.
+This made it easier to explore different possibilities and find the one that suited my style and needs the best. It also made the process more fun and creative, since I could see the results of my requests in real time and adjust them as I went along. When using the cloud agent with Copilot, I could even get a pull request with all the related changes, which made it easier to review and make adjustments if needed.
 
 One example is when I wanted to check how the articles page would look like without thumbnails, but still with a good UX to display the content. I just asked the agent to create a version of the page without them, and it generated a clean and simple layout that I really liked. It was much faster than doing it myself, and it gave me a good idea of how the page would look like without thumbnails.
 
