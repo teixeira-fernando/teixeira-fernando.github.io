@@ -47,10 +47,10 @@ title: Home
 
 <div class="section-preview">
   <h2>
-    <span>Latest Articles</span>
+    <span>Latest Article</span>
     <a href="{{ '/articles' | relative_url }}" class="view-all-link">View all articles</a>
   </h2>
-{% assign latest_articles = site.articles | sort: 'date' | reverse | limit: 3 %}
+{% assign latest_articles = site.articles | sort: 'date' | reverse | limit: 1 %}
 {% if latest_articles.size > 0 %}
   <div class="articles-grid">
     {% for article in latest_articles %}
