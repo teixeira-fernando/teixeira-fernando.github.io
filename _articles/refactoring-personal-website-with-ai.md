@@ -28,37 +28,36 @@ I use agents both **locally** and **in the cloud**.
 
 The advantages of cloud agents are:
 
-* **Built-in tool ecosystems**: Cloud agents often come pre-integrated with APIs, MCP servers, browsers, and other third-party tools, which helps them iterate and validate results.
+* **Built-in tool ecosystems**: Cloud agents often come pre-integrated with APIs, MCP servers, browsers, and other third-party tools, which helps them iterate faster and validate results.
 * **Access to more powerful models**: Cloud agents typically run on the latest available models.
 * **Better autonomy and orchestration**: In my experience, cloud agents handle longer workflows more reliably and can work more independently before answering, which reduces the effort needed to review the generated code.
 
-The downside is that you usually wait longer for results, and there are often more data-privacy considerations. So it doesn’t make sense to use cloud agents for everything, otherwise they can become a workflow bottleneck.
+The downside is that you usually wait longer for results, and there are often more data-privacy considerations. Because of that, it doesn’t make sense to use cloud agents for everything—otherwise they can become a workflow bottleneck.
 
 **Small tip**: When using local agents, the “plan” option in the initial prompt helps a lot. It reduces back-and-forth, prevents misunderstandings, and aligns your expectations with the agent’s before it starts implementing.
 
 ![Plan option screenshot](/assets/images/articles/personal-website-with-ai/plan-mode-copilot.png)
 
-## Experimenting ideas
+## Experimenting with ideas
 
-Another thing was about trying out different ideas and designs without much effort. I could just ask the agent to create a new version of the homepage with a different layout, and then compare them side by side to see which one I liked better. 
+Another benefit was being able to try different ideas and designs with very little effort. I could ask an agent to create a new version of the homepage with a different layout, then compare variations side by side to see which one I liked better.
 
-This made it easier to explore different possibilities and find the one that suited my style and needs the best. It also made the process more fun and creative, since I could see the results of my requests in real time and adjust them as I went along. When using the cloud agent with Copilot, I could even get a pull request with all the related changes, which made it easier to review and make adjustments if needed.
+This made it easier to explore different possibilities and find the one that suited my style and needs best. It also made the process more fun and creative, since I could see the results in real time and adjust as I went. With Copilot cloud agents, I could even get a pull request with all the related changes, which made review and follow-up tweaks much easier.
 
-One example is when I wanted to check how the articles page would look like without thumbnails, but still with a good UX to display the content. I just asked the agent to create a version of the page without them, and it generated a clean and simple layout that I really liked. It was much faster than doing it myself, and it gave me a good idea of how the page would look like without thumbnails.
+One example: I wanted to see how the articles page would look without thumbnails, while still keeping a good UX for browsing content. I asked the agent to create a thumbnail-free version, and it produced a clean, simple layout that I really liked. It was much faster than doing it myself, and it helped me validate the direction quickly.
 
-Another advantage of using agents to delegate the work is that I was able to delegate multiple parallel tasks to the agents, so while one agent was working on the homepage, another one could work on the articles page, and so on. This made the process much faster and more efficient, since I didn’t have to wait for one task to finish before starting another one. It also made it easier to keep track of the different changes and iterations, since each task had its own pull request and branch.
+Another advantage of delegating work to agents is that I could run multiple tasks in parallel. While one agent worked on the homepage, another could work on the articles page, and so on. That made the process faster overall, and it also made it easier to track iterations because each change lived in its own pull request and branch.
 
 ![Articles page without thumbnails screenshot](/assets/images/articles/personal-website-with-ai/pull-requests-copilot-ideas.png)
-
 
 ## Results and conclusion
 
 It took quite a few pull requests and iterations to reach what I wanted, but it was still easier (and faster) than doing all the CSS and HTML work on my own.
 
-Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise text. That meant extra iterations when the AI interpreted things differently, and occasionally I just made small changes myself.
+Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise text. That meant extra iterations when the AI interpreted things differently, and occasionally I made small changes myself.
 
-Also, even when using AI to help me in the refactoring, I still needed to do quite a few adjustments and fixes myself, especially when it came to styling and responsiveness. But that’s fine, since I was still able to save a lot of time and effort by delegating the heavy lifting to the AI.
+Also, even with AI helping, I still had to do a fair number of adjustments and fixes, especially around styling and responsiveness. But that’s fine: I still saved a lot of time and effort by delegating the heavy lifting to the AI.
 
-The nice thing is that—even without the latest models, the fanciest MCP server setups, or other paid AI tools—it was still possible to get great results. I’m sure some of those tools could have made things faster, but that’s fine. That’s the beauty of experimenting on personal projects and especially small projects, where the context windows are much smaller and the AI responses tend to be much better in comparison to larger and more complex projects.
+The nice thing is that—even without the latest models, the fanciest MCP server setups, or other paid AI tools—it was still possible to get great results. Some of those tools might have made things faster, but that’s okay. That’s the beauty of experimenting on personal projects, especially small ones: the context windows are smaller, and the AI responses tend to be better than in larger, more complex projects.
 
-And the final result is this website that you are accessing right now. Feel free to explore it and let me know what you think about the new design and layout! And if you have any feedback or suggestions, please don’t hesitate to reach out. I’m always open to hearing your thoughts and ideas.
+And the final result is the website you’re reading right now. Feel free to explore it and let me know what you think about the design and layout. If you have any feedback or suggestions, don’t hesitate to reach out. I’m always happy to hear your thoughts and ideas.
