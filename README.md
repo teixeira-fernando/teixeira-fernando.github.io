@@ -82,10 +82,12 @@ Create a new file in `_articles/` with the following front matter:
 title: Your Article Title
 date: 2024-01-15
 description: A brief description
+banner_image: /assets/images/articles/your-article-cover.svg
 ---
 
 Your content here...
 ```
+Use `banner_image` (or `image` as an alias) to set the article card image. If omitted, the site falls back to `/assets/images/articles/default-article.svg`.
 
 #### Talks
 Create a new file in `_talks/`:
