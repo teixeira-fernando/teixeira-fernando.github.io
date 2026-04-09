@@ -4,7 +4,6 @@
   date: 2025-04-01
   description: "Discover cost-saving strategies and tools that'll improve your automated tests for cloud applications"
   tags: ["testing", "cloud", "testcontainers", "localstack", "integration testing"]
-  image: /assets/images/articles/piggy-bank.svg
 
 - title: "Software Quality and Developer Experience: Why testers should care about it"
   publication: "Ministry of Testing"
@@ -12,4 +11,18 @@
   date: 2024-06-16
   description: "Understand how improving the developer experience can easily and efficiently contribute to creating high-quality software"
   tags: ["software quality", "developer experience", "testing"]
-  image: /assets/images/articles/development-experience.svg
+
+- title: "Improving your test strategy analyzing the application architecture risks"
+  publication: "Medium"
+  url: "https://medium.com/assertqualityassurance/improving-your-test-strategy-analyzing-the-application-architecture-risks-f83fad2d13b4"
+  date: 2021-02-06
+  description: "Learn how to analyze the architecture of your application to identify potential risks and improve your test strategy, ensuring better software quality and reliability."
+  tags: ["testing", "test strategy", "application architecture", "risk analysis"]
+
+- title: "Creating a test strategy for asynchronous microservices applications"
+  publication: "Medium"
+  url: "https://medium.com/assertqualityassurance/creating-a-test-strategy-for-asynchronous-microservices-applications-1397f7755e85"
+  date: 2021-01-09
+  description: "Learn how to create an effective test strategy for asynchronous microservices applications, reducing the reliance on costly end-to-end tests."
+  tags: ["testing", "microservices", "test strategy", "asynchronous"]
+

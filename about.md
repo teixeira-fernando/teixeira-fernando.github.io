@@ -17,6 +17,14 @@ description: Learn more about me and what I do
   <h2>Speaking & Community</h2>
   <p>I enjoy sharing my knowledge with the community. I've spoken at international conferences like JSConf, React Summit, and many local meetups. If you're organizing an event and would like me to speak, feel free to reach out.</p>
 
+  <h2>Upcoming Events</h2>
+  <ul>
+    <li>International Software Quality Days 2026 (Vienna, Austria)</li>
+    <li>Expo QA 2026 (Madrid, Spain)</li>
+    <li>Nordic Testing Days 2026 (Tallinn, Estonia)</li>
+    <li>WeTest Thessaloniki 2026 (Thessaloniki, Greece)</li>
+  </ul>
+
   {% if site.author.email %}
   <a href="mailto:{{ site.author.email }}" class="contact-button">Get in touch</a>
   {% endif %}
