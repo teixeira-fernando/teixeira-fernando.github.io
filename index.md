@@ -20,45 +20,24 @@ title: Home
   </h2>
 {% assign latest_talks = site.talks | sort: 'date' | reverse | limit: 2 %}
 {% if latest_talks.size > 0 %}
-  <div class="talks-list">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
     {% for talk in latest_talks %}
-    <article class="talk-card">
+    <div class="talk-card" style="position: relative;">
       <a
-        class="talk-card-overlay-link"
         href="{{ talk.url | relative_url }}"
         aria-label="View talk details: {{ talk.title }}"
+        style="position: absolute; inset: 0; border-radius: inherit; z-index: 1; text-decoration: none;"
       ></a>
-
-      <header class="talk-card-header">
-        <div class="talk-card-title-row">
-          <h3 class="talk-card-title">{{ talk.title }}</h3>
-          {% if talk.date %}
-          <time class="content-meta">{{ talk.date | date: "%B %Y" }}</time>
-          {% endif %}
-        </div>
-
-        {% if talk.event %}
-        <p class="talk-event">{{ talk.event }}</p>
-        {% endif %}
-      </header>
-
-      {% if talk.excerpt %}
-      <p class="talk-description">{{ talk.excerpt | strip_html | truncatewords: 50 }}</p>
-      {% elsif talk.description %}
+      <h3>{{ talk.title }}</h3>
+      <span class="talk-event">{{ talk.event }}</span>
       <p class="talk-description">{{ talk.description }}</p>
-      {% endif %}
-
       {% if talk.video_url or talk.slides_url %}
-      <div class="talk-links">
-        {% if talk.video_url %}
-        <a href="{{ talk.video_url }}" target="_blank" rel="noopener noreferrer" aria-label="Watch video for {{ talk.title }} (opens in new tab)">Watch Video</a>
-        {% endif %}
-        {% if talk.slides_url %}
-        <a href="{{ talk.slides_url }}" target="_blank" rel="noopener noreferrer" aria-label="View slides for {{ talk.title }} (opens in new tab)">View Slides</a>
-        {% endif %}
+      <div class="talk-links" style="position: relative; z-index: 2;">
+        {% if talk.video_url %}<a href="{{ talk.video_url }}" target="_blank" rel="noopener noreferrer" aria-label="Watch video for {{ talk.title }} (opens in new tab)">Video</a>{% endif %}
+        {% if talk.slides_url %}<a href="{{ talk.slides_url }}" target="_blank" rel="noopener noreferrer" aria-label="View slides for {{ talk.title }} (opens in new tab)">Slides</a>{% endif %}
       </div>
       {% endif %}
-    </article>
+    </div>
     {% endfor %}
   </div>
 {% else %}
