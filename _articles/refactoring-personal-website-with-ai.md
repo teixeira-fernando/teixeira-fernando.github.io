@@ -54,10 +54,10 @@ Another advantage of delegating work to agents is that I could run multiple task
 
 It took quite a few pull requests and iterations to reach what I wanted, but it was still easier (and faster) than doing all the CSS and HTML work on my own.
 
-Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise text. That meant extra iterations when the AI interpreted things differently, and occasionally I made small changes myself.
+Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise prompt text. That meant extra iterations when the AI interpreted things differently, and occasionally I made small changes myself.
 
 Also, even with AI helping, I still had to do a fair number of adjustments and fixes, especially around styling and responsiveness. But that’s fine: I still saved a lot of time and effort by delegating the heavy lifting to the AI.
 
-The nice thing is that—even without the latest models, the fanciest MCP server setups, or other paid AI tools—it was still possible to get great results. Some of those tools might have made things faster, but that’s okay. That’s the beauty of experimenting on personal projects, especially small ones: the context windows are smaller, and the AI responses tend to be better than in larger, more complex projects.
+The nice thing is that: even without the latest models, the fanciest MCP server setups, or other paid AI tools, it was still possible to get great results. Some of those tools might have made things faster, but that’s okay. That’s the beauty of experimenting on personal projects, especially small ones: the context windows are smaller, and the AI responses tend to be better than in larger, more complex projects.
 
 And the final result is the website you’re reading right now. Feel free to explore it and let me know what you think about the design and layout. If you have any feedback or suggestions, don’t hesitate to reach out. I’m always happy to hear your thoughts and ideas.
