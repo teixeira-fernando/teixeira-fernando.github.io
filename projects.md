@@ -20,7 +20,7 @@ description: Personal and open source projects
     <a href="{{ project_link }}" target="_blank" rel="noopener noreferrer" class="project-card-link" aria-label="View {{ project.title }}">
     {% endif %}
       {% if project.image %}
-      <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
+      <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image">
       {% endif %}
       <div class="project-content">
         <h3>{{ project.title }}</h3>
