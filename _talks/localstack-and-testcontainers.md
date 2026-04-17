@@ -24,7 +24,7 @@ Nowadays so many applications rely on cloud services, like databases, message qu
 - Understand how to use real containerized cloud services instead of mocks to make your tests more closely mimic the production environment setup.
 - Gain insights into how those tests can be easily run locally and in your CI/CD, enabling faster feedback;
 
-![Testing Cloud Applications](/assets/images/talks/testing-cloud-applications.png)
+![Testing Cloud Applications]({{ site.baseurl }}/assets/images/talks/testing-cloud-applications.png)
 
 ## Resources
 

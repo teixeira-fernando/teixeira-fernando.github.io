@@ -36,7 +36,7 @@ The downside is that you usually wait longer for results, and there are often mo
 
 **Small tip**: When using local agents, the “plan” option in the initial prompt helps a lot. It reduces back-and-forth, prevents misunderstandings, and aligns your expectations with the agent’s before it starts implementing.
 
-![Plan option screenshot](/assets/images/articles/personal-website-with-ai/plan-mode-copilot.png)
+![Plan option screenshot]({{ site.baseurl }}/assets/images/articles/personal-website-with-ai/plan-mode-copilot.png)
 
 ## Experimenting with ideas
 
@@ -48,7 +48,7 @@ One example: I wanted to see how the articles page would look without thumbnails
 
 Another advantage of delegating work to agents is that I could run multiple tasks in parallel. While one agent worked on the homepage, another could work on the articles page, and so on. That made the process faster overall, and it also made it easier to track iterations because each change lived in its own pull request and branch.
 
-![Articles page without thumbnails screenshot](/assets/images/articles/personal-website-with-ai/pull-requests-copilot-ideas.png)
+![Articles page without thumbnails screenshot]({{ site.baseurl }}/assets/images/articles/personal-website-with-ai/pull-requests-copilot-ideas.png)
 
 ## Results and conclusion
 

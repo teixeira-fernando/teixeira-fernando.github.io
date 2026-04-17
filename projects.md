@@ -6,7 +6,7 @@ description: Personal and open source projects
 
 <header style="margin-bottom: 3rem;">
   <h1>Projects</h1>
-  <p style="font-size: 1.125rem; color: #64748b; margin-top: 1rem;">Selected open source work and experiments.</p>
+  <p style="font-size: 1.125rem; color: #64748b; margin-top: 1rem;">Some open source projects and experiments which I created.</p>
 </header>
 
 {% assign projects = site.projects | sort: 'date' | reverse %}
