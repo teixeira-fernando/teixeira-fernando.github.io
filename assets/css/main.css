@@ -163,50 +163,6 @@ ul, ol {
   font-weight: inherit;
 }
 
-/* Content Lists */
-.content-list {
-  list-style: none;
-  margin-left: 0;
-  padding: 0;
-}
-
-.content-item {
-  margin-bottom: 3rem;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
-  border: none;
-  transition: none;
-  box-shadow: none;
-}
-
-.content-item:hover {
-  transform: none;
-  box-shadow: none;
-  border-color: transparent;
-}
-
-.content-item:last-child {
-  margin-bottom: 0;
-}
-
-.content-item h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.content-item h2 a {
-  color: #0f172a;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.content-item h2 a:hover {
-  color: #2563eb;
-}
-
 .content-meta {
   color: #94a3b8;
   font-size: 0.875rem;
@@ -658,7 +614,6 @@ button:focus {
 
 /* Article/Talk/Project specific styles */
 .article-tags,
-.talk-meta,
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -748,8 +703,8 @@ button:focus {
 
 .talk-description {
   color: #64748b;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font-size: 1.125rem;
+  line-height: 1.75;
   margin-bottom: 1rem;
 }
 
@@ -838,31 +793,6 @@ button:focus {
   margin-bottom: 0;
 }
 
-.project-links {
-  display: flex;
-  gap: 1rem;
-  padding: 0 1.5rem 1.5rem 1.5rem;
-}
-
-.project-links a,
-.project-link-button {
-  color: #0f172a;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  position: relative;
-  z-index: 1;
-}
-
-.project-links a:hover,
-.project-link-button:hover {
-  color: #2563eb;
-}
-
 /* Articles list grid layout */
 .articles-grid {
   display: grid;
@@ -933,9 +863,9 @@ button:focus {
 
 .article-excerpt {
   color: #64748b;
-  line-height: 1.6;
+  line-height: 1.75;
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
 }
 
 .article-cta {
