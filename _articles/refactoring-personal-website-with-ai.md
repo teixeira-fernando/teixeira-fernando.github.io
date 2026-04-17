@@ -24,7 +24,7 @@ So I decided to lean on AI to do the heavy lifting and see how close it could ge
 
 I’ve been using GitHub Copilot in my day-to-day work with newer (though not always the latest) OpenAI models like GPT-5.2 and GPT-5.2-Codex. Since that setup already works well for me, I decided to use it here too and delegate tasks to agents.
 
-I use agents both **locally** and **in the cloud**.
+I used agents both **locally** and **in the cloud**. Each one of them has their pros and cons and situations where they work the best.
 
 The advantages of cloud agents are:
 
@@ -56,7 +56,7 @@ It took quite a few pull requests and iterations to reach what I wanted, but it 
 
 Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise prompt text. That meant extra iterations when the AI interpreted things differently, and occasionally I made small changes myself.
 
-Also, even with AI helping, I still had to do a fair number of adjustments and fixes, especially around styling and responsiveness. But that’s fine: I still saved a lot of time and effort by delegating the heavy lifting to the AI.
+Also, even with AI helping, I still had to do a fair number of adjustments and fixes, especially around styling and responsiveness, like for example, different fonts being used across the website. Also, in some cases, there was some duplicated or unnecessary code which I needed to clean up. But that’s fine: I still saved a lot of time and effort by delegating the heavy lifting to the AI.
 
 The nice thing is that: even without the latest models, the fanciest MCP server setups, or other paid AI tools, it was still possible to get great results. Some of those tools might have made things faster, but that’s okay. That’s the beauty of experimenting on personal projects, especially small ones: the context windows are smaller, and the AI responses tend to be better than in larger, more complex projects.
 
