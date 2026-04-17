@@ -6,7 +6,7 @@ description: Technical articles and blog posts
 
 <header style="margin-bottom: 3rem;">
   <h1>Articles</h1>
-  <p style="font-size: 1.125rem; color: #64748b; margin-top: 1rem;">Writing about code, performance, and soft skills.</p>
+  <p style="font-size: 1.125rem; color: #64748b; margin-top: 1rem;">Writing about code, test automation and software quality practices.</p>
 </header>
 
 {% assign internal_articles = site.articles %}
