@@ -33,8 +33,4 @@ description: Learn more about me and what I do
     <li>Nordic Testing Days 2026 (Tallinn, Estonia)</li>
     <li>WeTest Thessaloniki 2026 (Thessaloniki, Greece)</li>
   </ul>
-
-  {% if site.author.email %}
-  <a href="mailto:{{ site.author.email }}" class="contact-button">Get in touch</a>
-  {% endif %}
 </div>
