@@ -2,7 +2,8 @@
 title: Fernando Teixeira
 description: Personal website for sharing my articles, talks, and projects
 favicon: assets/images/general/noto--technologist-medium-light-skin-tone.svg # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
-url: "https://teixeirafernando.github.io"
+url: "https://teixeira-fernando.github.io"
+baseurl: ""
 locale: en_US # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
 author:
   name: Fernando Teixeira
