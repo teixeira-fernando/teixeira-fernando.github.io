@@ -3,13 +3,12 @@ title: Fernando Teixeira
 description: Personal website for sharing my articles, talks, and projects
 favicon: assets/images/general/noto--technologist-medium-light-skin-tone.svg # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
 url: "https://teixeirafernando.github.io"
-locale: en_DE # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
+locale: en_US # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
 author:
   name: Fernando Teixeira
   email: fernandoadt1@gmail.com
   linkedin: fernandoadt
   github: teixeirafernando
-  twitter: # Add your Twitter username here if you have one
 
 # Build settings
 markdown: kramdown
