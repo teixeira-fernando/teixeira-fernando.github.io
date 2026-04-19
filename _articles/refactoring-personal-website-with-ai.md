@@ -1,6 +1,6 @@
 ---
 title: Refactoring my personal website with the help of GitHub Copilot
-date: 2026-04-07
+date: 2026-04-19
 description: Personal experience refactoring a website with the help of GitHub Copilot - learnings, challenges, and outcomes.
 tags: [AI, GitHub Copilot, Refactoring]
 banner_image: /assets/images/articles/personal-website-with-ai/ai-code-refactoring.svg
@@ -10,7 +10,9 @@ banner_image: /assets/images/articles/personal-website-with-ai/ai-code-refactori
 
 ## Motivation
 
-This year, I wanted to improve my old personal website, which was basically a list of links to articles, talks, projects, and social media. Since I’ve been creating more content lately, it felt like the right time to give it a better UI and a more organized structure.
+This year, I wanted to improve my old personal website. Since I’ve been creating more content lately, it felt like the right time to give it a better UI and a more organized structure.
+
+The old website was basically a list of links to articles, talks, projects, and social media, so a big refactoring was necessary to achieve what I had in mind.
 
 ## Goal and technical decisions
 

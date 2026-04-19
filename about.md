@@ -19,9 +19,6 @@ description: Learn more about me and what I do
     <li>Coaching engineers on QA automation practices and tools</li>
   </ul>
 
-  <h2>What I do when I'm not coding</h2>
-  <p>When I'm not behind a screen, I'm likely riding my bike, trying to improve my chess rating, or learning how to play the keyboard.</p>
-
   <h2>Speaking & Community</h2>
   <p>I enjoy sharing my knowledge with the community, and I've spoken at international conferences such as HUSTEF and Test Automation Days. If you're organizing an event and would like me to speak, feel free to reach out.</p>
 
@@ -33,4 +30,7 @@ description: Learn more about me and what I do
     <li>Nordic Testing Days 2026 (Tallinn, Estonia)</li>
     <li>WeTest Thessaloniki 2026 (Thessaloniki, Greece)</li>
   </ul>
+
+  <h2>What I do when I'm not coding</h2>
+  <p>When I'm not behind a screen, I'm likely riding my bike, trying to improve my chess rating, or learning how to play the keyboard.</p>
 </div>
