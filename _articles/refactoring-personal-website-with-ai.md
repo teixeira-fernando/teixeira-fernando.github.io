@@ -18,9 +18,9 @@ The old website was basically a list of links to articles, talks, projects, and 
 
 I wanted to keep using Jekyll, since it’s the framework I was already using and I really like it. It offers a lot of flexibility, and it makes it easy to create new articles and pages using Markdown.
 
-The challenge was that modernizing the site would require more frontend customization, mainly CSS and HTML, which aren’t my areas of expertise.
+The challenge was that modernizing the website would require more frontend customization, mainly CSS and HTML, which aren’t my areas of expertise.
 
-So I decided to lean on AI to do the heavy lifting and see how close it could get to what I had in mind. Having a clear picture of the desired end result helped a lot: it made it easier to plan the refactor, decide where to start, and phrase requests in a way an agent could execute.
+So I decided to rely on AI to do the heavy lifting and see how close it could get to what I had in mind. Having a clear picture of the desired end result helped a lot: it made it easier to plan the refactor, decide where to start, and phrase requests in a way an agent could execute.
 
 ## Getting started with the refactoring
 
@@ -44,7 +44,7 @@ The downside is that you usually wait longer for results, and there are often mo
 
 Another benefit was being able to try different ideas and designs with very little effort. I could ask an agent to create a new version of the homepage with a different layout, then compare variations side by side to see which one I liked better.
 
-This made it easier to explore different possibilities and find the one that suited my style and needs best. It also made the process more fun and creative, since I could see the results in real time and adjust as I went. With Copilot cloud agents, I could even get a pull request with all the related changes, which made review and follow-up tweaks much easier.
+This made it easier to explore different possibilities and find the one that suited my style and needs best. It also made the process more fun and creative, since I could see the results in real time and adjust as I went. With Copilot cloud agents, I could even get a pull request with all the related changes, which made code review and follow-up tweaks much easier.
 
 One example: I wanted to see how the articles page would look without thumbnails, while still keeping a good UX for browsing content. I asked the agent to create a thumbnail-free version, and it produced a clean, simple layout that I really liked. It was much faster than doing it myself, and it helped me validate the direction quickly.
 
@@ -56,7 +56,7 @@ Another advantage of delegating work to agents is that I could run multiple task
 
 It took quite a few pull requests and iterations to reach what I wanted, but it was still easier (and faster) than doing all the CSS and HTML work on my own.
 
-Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise prompts. This led to extra iterations when the AI interpreted things differently, and occasionally I made small changes myself.
+Because most of the work was UI/UX-related, it was sometimes hard to translate my expectations into precise prompts. This led to extra iterations when the AI interpreted things differently.
 
 Even with AI helping, I still had to make a fair number of adjustments and fixes, especially around styling and responsiveness, for example, inconsistent fonts across the website. In some cases, there was also duplicated or unnecessary code that I needed to clean up. But that’s fine: I still saved a lot of time and effort by delegating the heavy lifting to AI agents.
 
