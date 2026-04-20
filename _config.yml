@@ -11,6 +11,9 @@ author:
   linkedin: fernandoadt
   github: teixeira-fernando
 
+tagline: Fernando Teixeira - Personal Website  # Set your preferred page title
+google_analytics: G-L88Z5BTKF4
+
 # Build settings
 markdown: kramdown
 permalink: pretty
