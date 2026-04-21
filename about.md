@@ -25,10 +25,10 @@ description: Learn more about me and what I do
   <h2>Upcoming Events</h2>
   <p>Here are a few upcoming events where you can find me:</p>
   <ul>
-    <li>International Software Quality Days 2026 (Vienna, Austria)</li>
-    <li>Expo QA 2026 (Madrid, Spain)</li>
-    <li>Nordic Testing Days 2026 (Tallinn, Estonia)</li>
-    <li>WeTest Thessaloniki 2026 (Thessaloniki, Greece)</li>
+    <li><a href="https://www.software-quality-days.com/en/program?tx_comot_pi2%5Baction%5D=index&tx_comot_pi2%5Bcontroller%5D=Planner&tx_comot_pi2%5Bday%5D=105&cHash=3f93c9733447fd4c359d29e2b7e23c12" target="_blank" rel="noopener noreferrer">International Software Quality Days 2026 (Vienna, Austria)</a></li>
+    <li><a href="https://expoqa.com/timetable3/" target="_blank" rel="noopener noreferrer">Expo QA 2026 (Madrid, Spain)</a></li>
+    <li><a href="https://nordictestingdays.eu/program" target="_blank" rel="noopener noreferrer">Nordic Testing Days 2026 (Tallinn, Estonia)</a></li>
+    <li><a href="https://wetestskg2026.sched.com/directory/speakers" target="_blank" rel="noopener noreferrer">WeTest Thessaloniki 2026 (Thessaloniki, Greece)</a></li>
   </ul>
 
   <h2>What I do when I'm not coding</h2>
