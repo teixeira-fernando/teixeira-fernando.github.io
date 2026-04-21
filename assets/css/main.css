@@ -46,7 +46,7 @@ body {
 }
 
 .site-title {
-  font-size: 1.125rem;
+  font-size: 1.425rem;
   font-weight: 700;
   color: #0f172a;
   text-decoration: none;
@@ -63,13 +63,14 @@ body {
   display: flex;
   gap: 1.5rem;
   flex-wrap: nowrap;
+  margin: 0;
 }
 
-.nav-menu a {
+.nav-menu a {  
   color: #64748b;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1.075rem;
   transition: color 0.2s ease;
   position: relative;
   border-bottom: none;
