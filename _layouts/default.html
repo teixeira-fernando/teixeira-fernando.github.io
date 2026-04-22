@@ -8,6 +8,16 @@
       <div class="wrapper">
         {% if page.collection == 'talks' %}
           <a href="{{ '/talks' | relative_url }}" class="back-link">Back to all Talks</a>
+          {% if page.video_url %}
+            {% assign video_id = page.video_url | split: '?v=' | last %}
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/{{ video_id }}"
+                      title="{{ page.title }} - Video Recording"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+          {% endif %}
         {% elsif page.collection == 'articles' %}
           <a href="{{ '/articles' | relative_url }}" class="back-link">Back to all Articles</a>
         {% endif %}
