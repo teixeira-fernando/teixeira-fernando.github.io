@@ -402,6 +402,48 @@ pre code {
   max-width: 42rem;
 }
 
+.intro-social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.social-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.social-btn--linkedin {
+  background-color: #0a66c2;
+  color: #ffffff;
+}
+
+.social-btn--github {
+  background-color: #24292f;
+  color: #ffffff;
+}
+
 .section-preview {
   margin-bottom: 4rem;
 }
