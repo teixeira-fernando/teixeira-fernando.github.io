@@ -37,9 +37,9 @@ Nowadays so many applications rely on cloud services, like databases, message qu
 
 - Targeting Quality 2025 (Cambridge, Canada)
 - HUSTEF 2025 (Budapest, Hungary) - [Video](https://www.youtube.com/watch?v=paSJ_C0fqzQ)
-- (Coming soon) International Software Quality Days 2026 (Vienna, Austria) 
-- (Coming soon) Expo QA 2026 (Madrid, Spain) 
-- (Coming soon) Nordic Testing Days 2026 (Tallinn, Estonia)
+- International Software Quality Days 2026 (Vienna, Austria) 
+- Expo QA 2026 (Madrid, Spain) 
+- Nordic Testing Days 2026 (Tallinn, Estonia)
 - (Coming soon) WeTest Thessaloniki 2026 (Thessaloniki, Greece)
 
 ## Feedback
